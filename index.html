@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            typeof operator
+        */
+
+        console.log(typeof 10); // number
+        console.log(typeof 751n); // bigint
+        console.log(typeof "UK"); // string
+        console.log(typeof "50"); // string
+        console.log(typeof true); // boolean
+        console.log(typeof []); // object
+        console.log(typeof {}); // object
+        console.log(typeof undefined); // undefined
+        console.log(typeof Symbol()); // symbol
+        console.log(typeof NaN); // number
+        console.log(typeof null); // object
+        console.log(typeof ["object Object"]); // object
+
+        let data = "10n";
+        switch (typeof data) {
+            case "number":
+                console.log("this is a number");
+                break;
+            case "bigint":
+                console.log("this is a bigint");
+                break;
+            case "string":
+                console.log("this is a string");
+                break;
+            default:
+                console.log("unknown type");
+        }
+
+</script>
+</body>
+</html>
